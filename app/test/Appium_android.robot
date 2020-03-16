@@ -6,7 +6,7 @@ Library    Process
 ${USERNAME}    nithyamani3    #Can specify BrowserStack Username directly instead of Environment variable.
 ${ACCESS_KEY}    P4JKysg5WuchQxBfKQu1    #Can specify BrowserStack Accesskey directly instead of Environment variable.
 ${REMOTE_URL}    http://${USERNAME}:${ACCESS_KEY}@hub-cloud.browserstack.com/wd/hub
-${APP_PATH}    /Users/nithyamani/Desktop/APPS/WikipediaSample.apk
+${APP_PATH}    WikipediaSample.apk
 
 *** Test Cases ***
 Appium Test on BrowserStack

@@ -11,6 +11,7 @@ ${APP_PATH}    WikipediaSample.apk
 *** Test Cases ***
 Appium Test on BrowserStack
     ${AppUrl}    Run Process    curl -u "${USERNAME}:${ACCESS_KEY}" -X POST "https://api-cloud.browserstack.com/app-automate/upload" -F "file\=@${APP_PATH}"    shell=true    alias=AppUpload       
+    Log    ${AppUrl}
     ${AppData}    Evaluate    json.loads("""${AppUrl.stdout}""")    json
     Log    ${AppUrl.stdout}
     ${hash_id}    Set Variable     ${AppData['app_url']}

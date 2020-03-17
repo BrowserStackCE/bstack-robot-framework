@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot rpa="false" generated="20200316 19:18:31.088" generator="Robot 3.1.2 (Python 2.7.16 on darwin)">
+<suite source="/Users/nithyamani/eclipse-workspace/bs-robot-framework/app/test/Appium_ios.robot" id="s1" name="Appium ios">
+<test id="s1-t1" name="Appium Test on BrowserStack">
+<kw name="Run Process" library="Process">
+<doc>Runs a process and waits for it to complete.</doc>
+<arguments>
+<arg>curl -u "${USERNAME}:${ACCESS_KEY}" -X POST "https://api-cloud.browserstack.com/app-automate/upload" -F "file\=@${APP_PATH}"</arg>
+<arg>shell=true</arg>
+<arg>alias=AppUpload</arg>
+</arguments>
+<assign>
+<var>${AppUrl}</var>
+</assign>
+<msg timestamp="20200316 19:18:31.443" level="INFO">Starting process:
+curl -u "nithyamani3:P4JKysg5WuchQxBfKQu1" -X POST "https://api-cloud.browserstack.com/app-automate/upload" -F "file=@/Users/nithyamani/Desktop/APPS/BStackSampleApp.ipa"</msg>
+<msg timestamp="20200316 19:18:31.447" level="INFO">Waiting for process to complete.</msg>
+<msg timestamp="20200316 19:18:58.220" level="INFO">Process completed.</msg>
+<msg timestamp="20200316 19:18:58.221" level="INFO">${AppUrl} = &lt;result object with rc 0&gt;</msg>
+<status status="PASS" endtime="20200316 19:18:58.221" starttime="20200316 19:18:31.442"></status>
+</kw>
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>json.loads("""${AppUrl.stdout}""")</arg>
+<arg>json</arg>
+</arguments>
+<assign>
+<var>${AppData}</var>
+</assign>
+<msg timestamp="20200316 19:18:58.223" level="INFO">${AppData} = {u'app_url': u'bs://07dc0a4af4567a7086a3c739b3b51f41a086e6a0'}</msg>
+<status status="PASS" endtime="20200316 19:18:58.223" starttime="20200316 19:18:58.222"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${AppUrl.stdout}</arg>
+</arguments>
+<msg timestamp="20200316 19:18:58.224" level="INFO">{"app_url":"bs://07dc0a4af4567a7086a3c739b3b51f41a086e6a0"}</msg>
+<status status="PASS" endtime="20200316 19:18:58.224" starttime="20200316 19:18:58.223"></status>
+</kw>
+<kw name="Set Variable" library="BuiltIn">
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<arguments>
+<arg>${AppData['app_url']}</arg>
+</arguments>
+<assign>
+<var>${hash_id}</var>
+</assign>
+<msg timestamp="20200316 19:18:58.224" level="INFO">${hash_id} = bs://07dc0a4af4567a7086a3c739b3b51f41a086e6a0</msg>
+<status status="PASS" endtime="20200316 19:18:58.224" starttime="20200316 19:18:58.224"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${hash_id}</arg>
+</arguments>
+<msg timestamp="20200316 19:18:58.225" level="INFO">bs://07dc0a4af4567a7086a3c739b3b51f41a086e6a0</msg>
+<status status="PASS" endtime="20200316 19:18:58.225" starttime="20200316 19:18:58.225"></status>
+</kw>
+<kw name="Open Application" library="AppiumLibrary">
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/server-args.md
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |</doc>
+<arguments>
+<arg>${REMOTE_URL}</arg>
+<arg>app=${hash_id}</arg>
+<arg>name=single_test</arg>
+<arg>build=RobotFramework</arg>
+<arg>platformName=iOS</arg>
+<arg>os_version=11.0</arg>
+<arg>device=iPhone 8 Plus</arg>
+</arguments>
+<status status="PASS" endtime="20200316 19:19:17.859" starttime="20200316 19:18:58.225"></status>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>id=Alert Button</arg>
+</arguments>
+<msg timestamp="20200316 19:19:17.861" level="INFO">Clicking element 'id=Alert Button'.</msg>
+<status status="PASS" endtime="20200316 19:19:20.308" starttime="20200316 19:19:17.859"></status>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>id=OK</arg>
+</arguments>
+<msg timestamp="20200316 19:19:20.309" level="INFO">Clicking element 'id=OK'.</msg>
+<status status="PASS" endtime="20200316 19:19:22.275" starttime="20200316 19:19:20.308"></status>
+</kw>
+<kw name="Close Application" library="AppiumLibrary">
+<doc>Closes the current application and also close webdriver session.</doc>
+<status status="PASS" endtime="20200316 19:19:22.991" starttime="20200316 19:19:22.276"></status>
+</kw>
+<status status="PASS" endtime="20200316 19:19:22.992" critical="yes" starttime="20200316 19:18:31.442"></status>
+</test>
+<status status="PASS" endtime="20200316 19:19:22.993" starttime="20200316 19:18:31.091"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="0" pass="1">Critical Tests</stat>
+<stat fail="0" pass="1">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="0" id="s1" name="Appium ios" pass="1">Appium ios</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

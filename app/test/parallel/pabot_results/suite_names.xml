@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.1.2 (Python 3.7.3 on darwin)" generated="20200316 19:21:43.314" rpa="false">
+<suite id="s1" name="Suites">
+<suite id="s1-s1" name="Suite1 App" source="/Users/nithyamani/eclipse-workspace/bs-robot-framework/app/test/parallel/Suite1_App.robot">
+<test id="s1-s1-t1" name="Appium Test on BrowserStack">
+<kw name="No Operation" library="BuiltIn">
+<doc>Does absolutely nothing.</doc>
+<status status="NOT_RUN" starttime="20200316 19:21:43.666" endtime="20200316 19:21:43.666"></status>
+</kw>
+<kw name="No Operation" library="BuiltIn">
+<doc>Does absolutely nothing.</doc>
+<status status="NOT_RUN" starttime="20200316 19:21:43.666" endtime="20200316 19:21:43.666"></status>
+</kw>
+<status status="PASS" starttime="20200316 19:21:43.665" endtime="20200316 19:21:43.666" critical="yes"></status>
+</test>
+<status status="PASS" starttime="20200316 19:21:43.338" endtime="20200316 19:21:43.666"></status>
+</suite>
+<suite id="s1-s2" name="Suite2 App" source="/Users/nithyamani/eclipse-workspace/bs-robot-framework/app/test/parallel/Suite2_App.robot">
+<test id="s1-s2-t1" name="Appium Test on BrowserStack">
+<kw name="No Operation" library="BuiltIn">
+<doc>Does absolutely nothing.</doc>
+<status status="NOT_RUN" starttime="20200316 19:21:43.669" endtime="20200316 19:21:43.669"></status>
+</kw>
+<kw name="No Operation" library="BuiltIn">
+<doc>Does absolutely nothing.</doc>
+<status status="NOT_RUN" starttime="20200316 19:21:43.669" endtime="20200316 19:21:43.669"></status>
+</kw>
+<status status="PASS" starttime="20200316 19:21:43.669" endtime="20200316 19:21:43.669" critical="yes"></status>
+</test>
+<status status="PASS" starttime="20200316 19:21:43.667" endtime="20200316 19:21:43.669"></status>
+</suite>
+<suite id="s1-s3" name="Suite3 App" source="/Users/nithyamani/eclipse-workspace/bs-robot-framework/app/test/parallel/Suite3_App.robot">
+<test id="s1-s3-t1" name="Appium Test on BrowserStack">
+<kw name="No Operation" library="BuiltIn">
+<doc>Does absolutely nothing.</doc>
+<status status="NOT_RUN" starttime="20200316 19:21:43.672" endtime="20200316 19:21:43.672"></status>
+</kw>
+<kw name="No Operation" library="BuiltIn">
+<doc>Does absolutely nothing.</doc>
+<status status="NOT_RUN" starttime="20200316 19:21:43.672" endtime="20200316 19:21:43.672"></status>
+</kw>
+<status status="PASS" starttime="20200316 19:21:43.672" endtime="20200316 19:21:43.672" critical="yes"></status>
+</test>
+<status status="PASS" starttime="20200316 19:21:43.670" endtime="20200316 19:21:43.672"></status>
+</suite>
+<status status="PASS" starttime="20200316 19:21:43.317" endtime="20200316 19:21:43.673"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="3" fail="0">Critical Tests</stat>
+<stat pass="3" fail="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="3" fail="0" id="s1" name="Suites">Suites</stat>
+<stat pass="1" fail="0" id="s1-s1" name="Suite1 App">Suites.Suite1 App</stat>
+<stat pass="1" fail="0" id="s1-s2" name="Suite2 App">Suites.Suite2 App</stat>
+<stat pass="1" fail="0" id="s1-s3" name="Suite3 App">Suites.Suite3 App</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

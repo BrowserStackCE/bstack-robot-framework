@@ -1,0 +1,7 @@
+datasources:5532214fafa2ee1a58ffb79ba2a815a72b6c7048
+commandlineoptions:9f8598a690c7367accf83ead504756ddd374acc9
+suitesfrom:no-suites-from-option
+file:06b2fc4f00e481abef146023c4e0a870e91547f4
+--suite Suites.Suite1 App
+--suite Suites.Suite2 App
+--suite Suites.Suite3 App

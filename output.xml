@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot rpa="false" generated="20200316 18:37:58.096" generator="Robot 3.1.2 (Python 2.7.16 on darwin)">
+<suite source="/Users/nithyamani/eclipse-workspace/bs-robot-framework" id="s1" name="Bs-Robot-Framework">
+<suite source="/Users/nithyamani/eclipse-workspace/bs-robot-framework/app" id="s1-s1" name="App">
+<suite source="/Users/nithyamani/eclipse-workspace/bs-robot-framework/app/test" id="s1-s1-s1" name="Test">
+<suite source="/Users/nithyamani/eclipse-workspace/bs-robot-framework/app/test/Appium_android.robot" id="s1-s1-s1-s1" name="Appium android">
+<test id="s1-s1-s1-s1-t1" name="Appium Test on BrowserStack">
+<kw name="Run Process" library="Process">
+<doc>Runs a process and waits for it to complete.</doc>
+<arguments>
+<arg>curl -u ${USERNAME}:${ACCESS_KEY} -X POST https://api-cloud.browserstack.com/app-automate/upload -F "file\=@/Users/nithyamani/Desktop/APPS/WikipediaSample.apk"</arg>
+<arg>shell=true</arg>
+<arg>alias=AppUpload</arg>
+</arguments>
+<assign>
+<var>${AppUrl}</var>
+</assign>
+<msg timestamp="20200316 18:37:58.448" level="INFO">Starting process:
+curl -u nithyamani3:P4JKysg5WuchQxBfKQu1 -X POST https://api-cloud.browserstack.com/app-automate/upload -F "file=@/Users/nithyamani/Desktop/APPS/WikipediaSample.apk"</msg>
+<msg timestamp="20200316 18:37:58.458" level="INFO">Waiting for process to complete.</msg>
+<msg timestamp="20200316 18:38:11.775" level="INFO">Process completed.</msg>
+<msg timestamp="20200316 18:38:11.777" level="INFO">${AppUrl} = &lt;result object with rc 0&gt;</msg>
+<status status="PASS" endtime="20200316 18:38:11.777" starttime="20200316 18:37:58.447"></status>
+</kw>
+<kw name="Open Application" library="AppiumLibrary">
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/server-args.md
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |</doc>
+<arguments>
+<arg>${REMOTE_URL}</arg>
+<arg>app=${AppUrl.stdout}</arg>
+<arg>name=single_test</arg>
+<arg>build=RobotFramework</arg>
+<arg>platformName=Android</arg>
+<arg>os_version=7.0</arg>
+<arg>device=Samsung Galaxy S8</arg>
+</arguments>
+<kw name="Capture Page Screenshot" library="AppiumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20200316 18:38:13.804" level="FAIL">No application is open</msg>
+<status status="FAIL" endtime="20200316 18:38:13.804" starttime="20200316 18:38:13.799"></status>
+</kw>
+<msg timestamp="20200316 18:38:13.806" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg timestamp="20200316 18:38:13.807" level="FAIL">WebDriverException: Message: [BROWSERSTACK_INVALID_APP_URL] The app_url specified in the 'app' capability in your test is invalid. Please specify a valid app_url that was returned in the response to upload app API request and try again.
+</msg>
+<status status="FAIL" endtime="20200316 18:38:13.808" starttime="20200316 18:38:11.778"></status>
+</kw>
+<status status="FAIL" endtime="20200316 18:38:13.809" critical="yes" starttime="20200316 18:37:58.446">WebDriverException: Message: [BROWSERSTACK_INVALID_APP_URL] The app_url specified in the 'app' capability in your test is invalid. Please specify a valid app_url that was returned in the response to upload app API request and try again.
+</status>
+</test>
+<status status="FAIL" endtime="20200316 18:38:13.810" starttime="20200316 18:37:58.150"></status>
+</suite>
+<status status="FAIL" endtime="20200316 18:38:13.812" starttime="20200316 18:37:58.148"></status>
+</suite>
+<status status="FAIL" endtime="20200316 18:38:13.814" starttime="20200316 18:37:58.147"></status>
+</suite>
+<status status="FAIL" endtime="20200316 18:38:13.816" starttime="20200316 18:37:58.128"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="1" pass="0">Critical Tests</stat>
+<stat fail="1" pass="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="1" id="s1" name="Bs-Robot-Framework" pass="0">Bs-Robot-Framework</stat>
+<stat fail="1" id="s1-s1" name="App" pass="0">Bs-Robot-Framework.App</stat>
+<stat fail="1" id="s1-s1-s1" name="Test" pass="0">Bs-Robot-Framework.App.Test</stat>
+<stat fail="1" id="s1-s1-s1-s1" name="Appium android" pass="0">Bs-Robot-Framework.App.Test.Appium android</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20200316 18:38:13.806" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+</errors>
+</robot>

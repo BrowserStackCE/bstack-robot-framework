@@ -6,7 +6,6 @@ Library    Process
 ${USERNAME}    %{BROWSERSTACK_USERNAME}    #Can specify BrowserStack Username directly instead of Environment variable.
 ${ACCESS_KEY}    %{BROWSERSTACK_ACCESS_KEY}    #Can specify BrowserStack Accesskey directly instead of Environment variable.
 ${REMOTE_URL}    http://${USERNAME}:${ACCESS_KEY}@hub-cloud.browserstack.com/wd/hub
-<<<<<<< HEAD
 ${APP_PATH}    /Users/nithyamani/Desktop/APPS/WikipediaSample.apk
 
 *** Test Cases ***
@@ -16,7 +15,7 @@ Appium Test on BrowserStack
     Log    ${AppUrl.stdout}
     ${hash_id}    Set Variable     ${AppData['app_url']}
     Log    ${hash_id}
-    Open Application    ${REMOTE_URL}    app=${hash_id}    name=parallel_test    build=RobotFramework    platformName=Android    os_version=10.0    device=Google Pixel 4
+    Open Application    ${REMOTE_URL}    app=${hash_id}   name=single_test    build=RobotFramework    platformName=Android    os_version=7.0    device=Samsung Galaxy S8
 	# id=org.wikipedia.alpha:id/search_container
 	Click Element    id=org.wikipedia.alpha:id/search_container
 	# id=org.wikipedia.alpha:id/search_src_text
@@ -25,15 +24,5 @@ Appium Test on BrowserStack
 	Click Element    id=org.wikipedia.alpha:id/search_src_text
 	# xpath=/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.LinearLayout[2]/android.view.ViewGroup/android.support.v4.view.ViewPager/android.view.ViewGroup/android.widget.FrameLayout/android.support.v7.widget.RecyclerView/android.widget.FrameLayout[1]/android.widget.LinearLayout
 	Click Element    xpath=/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.LinearLayout[2]/android.view.ViewGroup/android.support.v4.view.ViewPager/android.view.ViewGroup/android.widget.FrameLayout/android.support.v7.widget.RecyclerView/android.widget.FrameLayout[1]/android.widget.LinearLayout
-=======
-
-*** Test Cases ***
-Appium Test on BrowserStack
-    Open Application    ${REMOTE_URL}    app=%{BROWSERSTACK_APP_ID}    name=parallel_test	build=RobotFramework    platformName=Android    os_version=9.0    device=OnePlus 7
-	# accessibility id=Alert Button
-	Click Element    id=Alert Button
-	# accessibility id=OK
-	Click Element    id=OK
->>>>>>> 29922b3b0100dc49a5aa1601906593a5e23346e5
 	Close Application
 

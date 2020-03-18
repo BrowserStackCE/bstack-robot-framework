@@ -6,7 +6,6 @@ Library    Process
 ${USERNAME}    nithyamani3    #Can specify BrowserStack Username directly instead of Environment variable.
 ${ACCESS_KEY}    P4JKysg5WuchQxBfKQu1    #Can specify BrowserStack Accesskey directly instead of Environment variable.
 ${REMOTE_URL}    http://${USERNAME}:${ACCESS_KEY}@hub-cloud.browserstack.com/wd/hub
-<<<<<<< HEAD
 ${APP_PATH}    /Users/nithyamani/Desktop/APPS/WikipediaSample.apk
 
 *** Test Cases ***
@@ -19,13 +18,6 @@ Appium Test on BrowserStack
     Log    ${hash_id}
     # id=org.wikipedia.alpha:id/search_container
     Open Application    ${REMOTE_URL}    app=${hash_id}   name=single_test    build=RobotFramework    platformName=Android    os_version=7.0    device=Samsung Galaxy S8
-=======
-
-*** Test Cases ***
-Appium Test on BrowserStack
-    	# id=org.wikipedia.alpha:id/search_container
-    	Open Application    ${REMOTE_URL}    app=%{BROWSERSTACK_APP_ID}   name=single_test    build=RobotFramework    platformName=Android    os_version=7.0    device=Samsung Galaxy S8
->>>>>>> 29922b3b0100dc49a5aa1601906593a5e23346e5
 	# id=org.wikipedia.alpha:id/search_container
 	Click Element    id=org.wikipedia.alpha:id/search_container
 	# id=org.wikipedia.alpha:id/search_src_text

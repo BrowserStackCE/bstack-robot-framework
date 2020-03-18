@@ -1,9 +1,5 @@
 *.html
 *.xml
-/pabot_results
+pabot_results/
 .DS_Store
-../.DS_Store
-../../log.html
-../../output.xml
-../../report.html
 .pabotsuitenames

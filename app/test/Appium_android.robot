@@ -9,8 +9,12 @@ ${REMOTE_URL}    http://${USERNAME}:${ACCESS_KEY}@hub-cloud.browserstack.com/wd/
 
 *** Test Cases ***
 Appium Test on BrowserStack
+<<<<<<< HEAD
     # id=org.wikipedia.alpha:id/search_container
     Open Application    ${REMOTE_URL}    app=%{BROWSERSTACK_APP_ID}   name=single_test    build=RobotFramework    platformName=Android    os_version=7.0    device=Samsung Galaxy S8
+=======
+    	Open Application    ${REMOTE_URL}    app=%{BROWSERSTACK_APP_ID}   name=single_test    build=RobotFramework    platformName=Android    os_version=7.0    device=Samsung Galaxy S8
+>>>>>>> 3cc58ce6db279811ff4b164f3dc5afca4d15c153
 	# id=org.wikipedia.alpha:id/search_container
 	Click Element    id=org.wikipedia.alpha:id/search_container
 	# id=org.wikipedia.alpha:id/search_src_text

@@ -10,7 +10,8 @@ ${APP_PATH}    /Users/nithyamani/Desktop/APPS/WikipediaSample.apk
 
 *** Test Cases ***
 Appium Test on BrowserStack
-    Open Application    ${REMOTE_URL}    app=%{BROWSERSTACK_APP_ID}   name=parallel_test    build=RobotFramework    platformName=Android    os_version=7.0    device=Samsung Galaxy S8
+   	# id=org.wikipedia.alpha:id/search_container
+    	Open Application    ${REMOTE_URL}    app=%{BROWSERSTACK_APP_ID}   name=parallel_test    build=RobotFramework    platformName=Android    os_version=7.0    device=Samsung Galaxy S8
 	# id=org.wikipedia.alpha:id/search_container
 	Click Element    id=org.wikipedia.alpha:id/search_container
 	# id=org.wikipedia.alpha:id/search_src_text

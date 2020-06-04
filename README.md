@@ -20,8 +20,7 @@
 ## Running tests
 
 ### Automate
-* Navigate to 'web' folder, `cd web`
-* Navigate to 'test' folder, `cd test`
+* Navigate to `cd web/test`
 * To run single test, run `robot SingleTest.robot`
 * To run local tests
   - Start the `BrowserStack Local Binary` in advance. https://www.browserstack.com/local-testing/automate
@@ -38,8 +37,7 @@
     
 ### App Automate
 
-* Navigate to 'app' folder, `cd app`
-* Navigate to 'test' folder, `cd test`
+* Navigate to `cd app/test`
 * Upload app: https://www.browserstack.com/app-automate/appium-python#getting-started
 * Add "app_url" to the script. Eg: 
 - Android

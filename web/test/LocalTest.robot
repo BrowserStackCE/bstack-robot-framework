@@ -1,6 +1,5 @@
 *** Settings ***
 Library    SeleniumLibrary   
-Library    browserstack.local 
 *** Variables ***
 ${USERNAME}    %{BROWSERSTACK_USERNAME}    #Can specify BrowserStack Username directly instead of Environment variable.
 ${ACCESS_KEY}    %{BROWSERSTACK_ACCESS_KEY}    #Can specify BrowserStack Accesskey directly instead of Environment variable.

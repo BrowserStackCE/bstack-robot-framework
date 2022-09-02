@@ -10,14 +10,14 @@ ${REMOTE_URL}    http://${USERNAME}:${ACCESS_KEY}@hub-cloud.browserstack.com/wd/
 *** Test Cases ***
 Appium Test on BrowserStack
    	# id=org.wikipedia.alpha:id/search_container
-    	Open Application    ${REMOTE_URL}    app=%{BROWSERSTACK_APP_ID}   name=single_test    build=RobotFramework    platformName=Android    os_version=7.0    device=Samsung Galaxy S8
+    Open Application    ${REMOTE_URL}    app=%{BROWSERSTACK_APP_ID}   name=single_test    build=RobotFramework    platformName=Android    os_version=7.0    device=Samsung Galaxy S8
 	# id=org.wikipedia.alpha:id/search_container
 	Click Element    id=org.wikipedia.alpha:id/search_container
 	# id=org.wikipedia.alpha:id/search_src_text
 	Click Element    id=org.wikipedia.alpha:id/search_src_text
 	Input Text    id=org.wikipedia.alpha:id/search_src_text    BrowserStack
-	# xpath=/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.LinearLayout[2]/android.view.ViewGroup/android.support.v4.view.ViewPager/android.view.ViewGroup/android.widget.FrameLayout/android.support.v7.widget.RecyclerView/android.widget.FrameLayout[1]/android.widget.LinearLayout
-	Click Element    xpath=/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.LinearLayout[2]/android.view.ViewGroup/android.support.v4.view.ViewPager/android.view.ViewGroup/android.widget.FrameLayout/android.support.v7.widget.RecyclerView/android.widget.FrameLayout[1]/android.widget.LinearLayout
+	# id=org.wikipedia.alpha:id/fragment_feed_header
+	Click Element    id=org.wikipedia.alpha:id/fragment_feed_header
 	Close Application
 	
 	

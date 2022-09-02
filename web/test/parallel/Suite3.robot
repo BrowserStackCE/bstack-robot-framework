@@ -9,7 +9,7 @@ ${URL}    https://www.google.com
 
 *** Test Cases ***
 Parallel Tests
-    Open Browser    ${URL}    &{DC}[browser]    remote_url=${REMOTE_URL}    desired_capabilities=&{DC}
+    Open Browser    ${URL}  remote_url=${REMOTE_URL}    desired_capabilities=&{DC}
     Input Text    name=q    BrowserStack 
     Press Keys    name=q    ENTER
     Sleep    5           

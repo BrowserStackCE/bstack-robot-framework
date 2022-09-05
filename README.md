@@ -1,5 +1,10 @@
 # bs-robot-framework
 
+NOTE: This repo is outdated and no longer being maintained. Please refer to the new Robot framework repos;
+- [BrowserStack Integration with Robot Framework Selenium](https://github.com/BrowserStackCE/browserstack-robot-framework-selenium)
+- [BrowserStack Integration with Robot Framework Appium](https://github.com/BrowserStackCE/browserstack-robot-framework-appium)
+
+
 ![BrowserStack Logo](https://d98b8t1nnulk5.cloudfront.net/production/images/layout/logo-header.png?1469004780) 
 
 ## Setup

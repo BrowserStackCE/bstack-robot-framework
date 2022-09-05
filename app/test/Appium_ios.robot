@@ -16,8 +16,6 @@ Appium Test on BrowserStack
 	Click Element    accessibility_id=OK
 	Close Application
 
-	
-	# Upload app programatically
     # ${AppUrl}    Run Process    curl -u "${USERNAME}:${ACCESS_KEY}" -X POST "https://api-cloud.browserstack.com/app-automate/upload" -F "file\=@${APP_PATH}"    shell=true    alias=AppUpload       
     # ${AppData}    Evaluate    json.loads("""${AppUrl.stdout}""")    json
     # Log    ${AppUrl.stdout}

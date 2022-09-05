@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<projectConfiguration>
+    <configVersion>2</configVersion>
+    <relativeTo>WORKSPACE</relativeTo>
+    <referencedLibrary type="PYTHON" name="SeleniumLibrary" path="/Library/Python/2.7/site-packages/SeleniumLibrary/__init__.py" dynamic="false"/>
+    <referencedLibrary type="PYTHON" name="browserstack.local" path="/Users/nithyamani/Library/Python/2.7/lib/python/site-packages/browserstack/local.py" dynamic="false"/>
+    <referencedLibrary type="PYTHON" name="AppiumLibrary" path="/Library/Python/2.7/site-packages/robotframework_appiumlibrary-1.5.0.4-py2.7.egg/AppiumLibrary/__init__.py" dynamic="false"/>
+    <pythonpath/>
+    <classpath/>
+    <excludedForValidation/>
+    <isValidatedFileSizeCheckingEnabled>true</isValidatedFileSizeCheckingEnabled>
+    <validatedFileMaxSize>1024</validatedFileMaxSize>
+</projectConfiguration>

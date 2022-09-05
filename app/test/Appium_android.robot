@@ -5,7 +5,7 @@ Library    Process
 *** Variables ***
 ${USERNAME}    %{BROWSERSTACK_USERNAME}    #Can specify BrowserStack Username directly instead of Environment variable.
 ${ACCESS_KEY}    %{BROWSERSTACK_ACCESS_KEY}    #Can specify BrowserStack Accesskey directly instead of Environment variable.
-${REMOTE_URL}    http://${USERNAME}:${ACCESS_KEY}@hub-cloud.browserstack.com/wd/hub	
+${REMOTE_URL}    http://${USERNAME}:${ACCESS_KEY}@hub-cloud.browserstack.com/wd/hub
 
 *** Test Cases ***
 Appium Test on BrowserStack
@@ -21,7 +21,6 @@ Appium Test on BrowserStack
 	Close Application
 	
 	
-	# Upload app programatically
     # ${AppUrl}    Run Process    curl -u "${USERNAME}:${ACCESS_KEY}" -X POST "https://api-cloud.browserstack.com/app-automate/upload" -F "file\=@${APP_PATH}"    shell=true    alias=AppUpload       
     # ${AppData}    Evaluate    json.loads("""${AppUrl.stdout}""")    json
     # Log    ${AppUrl.stdout}

@@ -1,10 +1,8 @@
+<<<<<<< HEAD
+=======
 *.html
 *.xml
 pabot_results/
 .DS_Store
 .pabotsuitenames
-*.jpg
-*.project
-*.png
-libspecs/
-.DS_Store
+>>>>>>> 3cc58ce6db279811ff4b164f3dc5afca4d15c153

@@ -3,7 +3,7 @@ node {
    stage('Preparation') { // for display purposes
    //pass login
  properties([parameters([credentials(credentialType: 'com.browserstack.automate.ci.jenkins.BrowserStackCredentials', defaultValue: '', description: '', name: 'BROWSERSTACK_USERNAME', required: true), choice(choices: ['single', 'local', 'parallel - testsuite level', 'parallel - testcase level', 'appium_android', 'appium_ios', 'appium parallel'], description: 'Included Automate and App-Automate tests', name: 'Command')])])
-    git changelog: false, poll: false, url: 'https://github.com/nithyamn/bs-robot-framework.git'
+    git changelog: false, poll: false, url: 'https://github.com/BrowserStackCE/bstack-robot-framework.git'
    }
    stage('Initiate tests on BrowserStack') {
         browserstack(credentialsId: "${params.BROWSERSTACK_USERNAME}",localConfig: [localOptions: '', localPath: '']) {

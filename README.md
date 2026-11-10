@@ -5,7 +5,7 @@ NOTE: This repo is outdated and no longer being maintained. Please refer to the 
 - [BrowserStack Integration with Robot Framework Appium](https://github.com/BrowserStackCE/browserstack-robot-framework-appium)
 
 
-![BrowserStack Logo](https://d98b8t1nnulk5.cloudfront.net/production/images/layout/logo-header.png?1469004780) 
+![BrowserStack Logo](https://www.browserstack.com/images/static/header-logo.jpg) 
 
 ## Setup
 * Clone the repo
